@@ -14,4 +14,4 @@ Un classe mère **T** doit pouvoir se faire substituer par une classe fille **U*
 **Interface Segregation** ou la **segrégation d'interfaces** suggère que la classe ne devrait pas implémenter une interface qu'elle n'utilise pas pleinement. Il est préférable d'avoir une hiérarchie d'interfaces qui décrit mieux une fonctionnalité et de n'implémenter que du nécessaire.
 
 ## D pour Dependency injection principle 
-**Dependency injection** ou **injection de dépendances** 
+**Dependency injection** ou **injection de dépendances**, les modules de haut niveau ne doivent pas dépendre des modules de bas niveau, les astractions ne doivent pas dépendre des détails.
