@@ -22,7 +22,15 @@ Afin de respecter le **DIP**, il faut que le module de haut niveau puisse fourni
         Person p = new Person();
         Chore c = new Chore();
     }
+    
+    public class Person()
+    {
+    }
+    public class Chore()
+    {
+    }
 ```
+
 Devient donc
 ```cs
     static void main()
@@ -49,6 +57,13 @@ Devient donc
     }
 
     public interface IChore
+    {
+    }
+    
+    public class Person(): IPerson
+    {
+    }
+    public class Chore(): IChore
     {
     }
 ```
