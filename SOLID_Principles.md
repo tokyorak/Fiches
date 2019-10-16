@@ -14,7 +14,8 @@ Un classe mère **T** doit pouvoir se faire substituer par une classe fille **U*
 **Interface Segregation** ou la **segrégation d'interfaces** suggère que la classe ne devrait pas implémenter une interface qu'elle n'utilise pas pleinement. Il est préférable d'avoir une hiérarchie d'interfaces qui décrit mieux une fonctionnalité et de n'implémenter que du nécessaire.
 
 ## D pour Dependency injection principle 
-**Dependency injection** ou **injection de dépendances**, les modules de haut niveau ne doivent pas dépendre des modules de bas niveau, les astractions ne doivent pas dépendre des détails.
+**Dependency inversion** ou **inversion de dépendances**, les modules de haut niveau ne doivent pas dépendre des modules de bas niveau, les astractions ne doivent pas dépendre des détails.
+Le top level ne doit dépendre que des abstractions et non pas des implémentations pour fonctionner.
 Afin de respecter le **DIP**, il faut que le module de haut niveau puisse fournir aux modules du bas niveau toutes les structures nécessaires. Et donc au lieu d'avoir des initialisations dans les modules de bas niveau on peu utiliser une __factory__ pour construire tous les objets nécessaires à manipuler. Et pour respecter les autres principes, il est préférable de créer des interfaces.
 ```cs
     static void main()
